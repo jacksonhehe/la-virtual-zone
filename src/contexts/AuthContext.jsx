@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const SESSION_KEY = 'lvz_session';
 const AuthContext = createContext();

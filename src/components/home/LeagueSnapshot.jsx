@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function LeagueSnapshot({ rows }) {
   return (
     <section className="mb-8">

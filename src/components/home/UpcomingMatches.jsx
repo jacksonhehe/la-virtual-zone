@@ -1,3 +1,5 @@
+import React from 'react';
+
 function formatDateTime(date) {
   return new Date(date).toLocaleString('es-ES', { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' });
 }

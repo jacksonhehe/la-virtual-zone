@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import baseState, { STORAGE_KEY } from '../data/seed';
 
 const DataContext = createContext();
