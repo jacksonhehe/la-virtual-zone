@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export default function KpiStrip({ items }) {
   if (!items || !items.length) return null;
   return (
