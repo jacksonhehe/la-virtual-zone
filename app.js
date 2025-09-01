@@ -4,9 +4,13 @@ function $(id){ return document.getElementById(id); }
 function renderNav(){
   const nav = $('main-nav');
   nav.innerHTML = '';
+  const container = document.createElement('div');
+  container.className = 'nav-container';
   const left = document.createElement('div');
-  left.innerHTML = `<a href="#/">La Virtual Zone</a>`;
+  left.className = 'nav-left';
+  left.innerHTML = `<a class="brand" href="#/">La Virtual Zone</a>`;
   const right = document.createElement('div');
+  right.className = 'nav-right';
   if(state.session){
     right.innerHTML = `Hola, ${state.session.username} | <a href="#/logout">Salir</a>`;
     if(state.session.role==='DT') right.innerHTML += ` | <a href="#/dt">Club</a>`;
@@ -14,7 +18,9 @@ function renderNav(){
   } else {
     right.innerHTML = `<a href="#/login">Login</a> | <a href="#/register">Registro</a>`;
   }
-  nav.appendChild(left); nav.appendChild(right);
+  container.appendChild(left);
+  container.appendChild(right);
+  nav.appendChild(container);
 }
 
 function router(){
