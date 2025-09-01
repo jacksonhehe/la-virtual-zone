@@ -4,7 +4,7 @@ Demo de plataforma de eSports para gestionar una Liga Master ficticia.
 
 ## Cómo probar
 
-1. Abrir `index.html` en el navegador.
+1. Ejecutar `npm run dev` y abrir http://localhost:3000 en el navegador.
 2. Iniciar sesión con:
    - admin / admin
    - dt / dt
